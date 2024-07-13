@@ -1126,9 +1126,33 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy_Knight
       objectReference: {fileID: 0}
+    - target: {fileID: 2911294158956692038, guid: f01ffc1ebe4c90e4aa14a5b7230c2628, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 6137096680296655069, guid: aee88a1a8cb5f514f8371e93da939c18, type: 3}
     - target: {fileID: 3294570360911839730, guid: f01ffc1ebe4c90e4aa14a5b7230c2628, type: 3}
       propertyPath: maxhealth
       value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 5734497823532074148, guid: f01ffc1ebe4c90e4aa14a5b7230c2628, type: 3}
+      propertyPath: m_Size.y
+      value: 1.4804847
+      objectReference: {fileID: 0}
+    - target: {fileID: 5734497823532074148, guid: f01ffc1ebe4c90e4aa14a5b7230c2628, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.7507576
+      objectReference: {fileID: 0}
+    - target: {fileID: 5734497823532074148, guid: f01ffc1ebe4c90e4aa14a5b7230c2628, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5734497823532074148, guid: f01ffc1ebe4c90e4aa14a5b7230c2628, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.41666666
+      objectReference: {fileID: 0}
+    - target: {fileID: 5734497823532074148, guid: f01ffc1ebe4c90e4aa14a5b7230c2628, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.4583334
       objectReference: {fileID: 0}
     - target: {fileID: 8253746549990645698, guid: f01ffc1ebe4c90e4aa14a5b7230c2628, type: 3}
       propertyPath: m_LocalPosition.x
