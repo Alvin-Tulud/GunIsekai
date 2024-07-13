@@ -48,6 +48,8 @@ public class gunShoot : MonoBehaviour
 
             proj.GetComponent<Rigidbody2D>().velocity = mousePos * bulletSpeed;
 
+            proj.GetComponent<BulletHit>().damage = transform.parent.GetComponent<PlayerStats>().gstats.bulletdamage;
+
 
             StartCoroutine(canShootWait());
         }

@@ -27,6 +27,8 @@ public class PlayerStats : MonoBehaviour
         pstats.currenthp = pstats.maxhp;
         pstats.speed = 0f;
         addSpeed(8f);
+
+        gstats.bulletdamage = 1;
     }
 
     public void addSpeed(float speed)

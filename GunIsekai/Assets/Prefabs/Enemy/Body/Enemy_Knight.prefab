@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 4226866533985711050}
   - component: {fileID: 8264469212844011433}
   - component: {fileID: 4865737630958664025}
+  - component: {fileID: 3294570360911839730}
   m_Layer: 7
   m_Name: Enemy_Knight
   m_TagString: Enemy
@@ -210,6 +211,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e8bce72c8a6c5724c851f634b6656bdd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3294570360911839730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1074034065399778319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1fd37e6fb4ecab4f86756be108cda2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &3142414776067956583
