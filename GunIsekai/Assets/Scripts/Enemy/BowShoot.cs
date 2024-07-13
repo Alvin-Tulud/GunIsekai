@@ -5,7 +5,7 @@ using UnityEngine;
 public class BowShoot : MonoBehaviour
 {
     public GameObject arrow;
-    public const float arrowSpeed = 6f;
+    public const float arrowSpeed = 7f;
     private bool canShoot;
     // Start is called before the first frame update
     void Start()
@@ -43,6 +43,8 @@ public class BowShoot : MonoBehaviour
 
             playerPos.Normalize();
             proj.GetComponent<Rigidbody2D>().velocity = playerPos * arrowSpeed;
+
+            proj.GetComponent<ArrowHit>().damage = transform.parent.GetComponent<EnemyStats>().estats.damage;
 
 
             StartCoroutine(canShootWait());

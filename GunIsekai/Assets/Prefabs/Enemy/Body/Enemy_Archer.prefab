@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 9122714888951655026}
   - component: {fileID: 6172198531891278050}
   - component: {fileID: 2996594246136769415}
+  - component: {fileID: 7348349763644948468}
   m_Layer: 7
   m_Name: Enemy_Archer
   m_TagString: Enemy
@@ -210,6 +211,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e8bce72c8a6c5724c851f634b6656bdd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7348349763644948468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 659642441391058852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1fd37e6fb4ecab4f86756be108cda2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &7100464069285960182
@@ -443,4 +456,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   arrow: {fileID: 5840602237749962158, guid: 6ca4d66c689b5d4458674a84a9fffe99, type: 3}
-  speed: {x: 0, y: 0}

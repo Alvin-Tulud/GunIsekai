@@ -13,12 +13,6 @@ public class EnemyStats : MonoBehaviour
 
     public enemystats estats;
 
-    // Start is called before the first frame update
-    void Awake()
-    {
-        
-    }
-
     public void takeDamage(int damage)
     {
         estats.currenthp -= damage;
@@ -27,5 +21,6 @@ public class EnemyStats : MonoBehaviour
     public void setMaxHP(int hp)
     {
         estats.maxhp = hp;
+        estats.currenthp = hp;
     }
 }
