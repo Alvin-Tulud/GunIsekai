@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SwordHit : MonoBehaviour
 {
+    public int damage;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +15,11 @@ public class SwordHit : MonoBehaviour
     void Update()
     {
         
+    }
+
+    IEnumerator canHit()
+    {
+        damage = 0;
+        yield return new WaitForSeconds(0.5f);
     }
 }

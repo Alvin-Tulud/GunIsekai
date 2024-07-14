@@ -36,7 +36,10 @@ public class PlayerHealthHandler : MonoBehaviour
     {
         if (collision.gameObject.layer == 10)
         {
-            pstats.takeDamage(collision.gameObject.GetComponent<ArrowHit>().damage);
+            if (collision.gameObject.GetComponent<ArrowHit>() != null)
+                pstats.takeDamage(collision.gameObject.GetComponent<ArrowHit>().damage);
+            else if (collision.gameObject.GetComponent<SwordHit>() != null)
+                pstats.takeDamage(collision.gameObject.GetComponent<SwordHit>().damage);
 
             healthSlider.value = pstats.pstats.currenthp;
         }
