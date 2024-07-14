@@ -9,6 +9,7 @@ TagManager:
   - Bow
   - Arrow
   - Bullet
+  - HealthBar
   layers:
   - Default
   - TransparentFX
