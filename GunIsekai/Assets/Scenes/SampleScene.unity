@@ -1259,6 +1259,14 @@ PrefabInstance:
       propertyPath: maxhealth
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 8459693912704857537, guid: 498a1df3212ac27488e50820050fc86b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 8069829141408841290, guid: 5cb8837f3345ecd49acd57d062f553c2, type: 3}
+    - target: {fileID: 8862497812663073113, guid: 498a1df3212ac27488e50820050fc86b, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 928825788037575063, guid: 5cb8837f3345ecd49acd57d062f553c2, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

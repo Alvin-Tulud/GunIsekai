@@ -225,6 +225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1fd37e6fb4ecab4f86756be108cda2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxhealth: 0
 --- !u!1 &7100464069285960182
 GameObject:
   m_ObjectHideFlags: 0
@@ -357,6 +358,7 @@ GameObject:
   - component: {fileID: 8459693912704857537}
   - component: {fileID: 4148502463825650974}
   - component: {fileID: 1871843913239653980}
+  - component: {fileID: 8862497812663073113}
   m_Layer: 7
   m_Name: Bow
   m_TagString: Untagged
@@ -456,3 +458,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   arrow: {fileID: 5840602237749962158, guid: 6ca4d66c689b5d4458674a84a9fffe99, type: 3}
+--- !u!95 &8862497812663073113
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7115582957525956432}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
