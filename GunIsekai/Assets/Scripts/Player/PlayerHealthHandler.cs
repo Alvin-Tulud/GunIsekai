@@ -7,25 +7,23 @@ public class PlayerHealthHandler : MonoBehaviour
 {
     private PlayerStats pstats;
     private Slider healthSlider;
-    public int maxhealth;
     // Start is called before the first frame update
     void Awake()
     {
         pstats = GetComponent<PlayerStats>();
 
-        pstats.pstats.maxhp = maxhealth;
-
 
         healthSlider = GameObject.FindWithTag("HealthBar").GetComponent<Slider>();
 
-        healthSlider.maxValue = maxhealth;
-        healthSlider.value = maxhealth;
+        healthSlider.maxValue = pstats.pstats.maxhp;
+        healthSlider.value = pstats.pstats.maxhp;
     }
 
     // Update is called once per frame
     void Update()
     {
-        healthSlider.maxValue = maxhealth;
+        healthSlider.maxValue = pstats.pstats.maxhp;
+        healthSlider.value = pstats.pstats.currenthp;
         if (pstats.pstats.currenthp <= 0)
         {
             //Destroy(gameObject); end game
@@ -34,14 +32,9 @@ public class PlayerHealthHandler : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.layer == 10)
+        if (collision.gameObject.CompareTag("Arrow"))
         {
-            if (collision.gameObject.GetComponent<ArrowHit>() != null)
-                pstats.takeDamage(collision.gameObject.GetComponent<ArrowHit>().damage);
-            else if (collision.gameObject.GetComponent<SwordHit>() != null)
-                pstats.takeDamage(collision.gameObject.GetComponent<SwordHit>().damage);
-
-            healthSlider.value = pstats.pstats.currenthp;
+            pstats.takeDamage(collision.gameObject.GetComponent<ArrowHit>().damage);
         }
     }
 }

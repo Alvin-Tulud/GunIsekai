@@ -7,28 +7,48 @@ public class BaseStats : MonoBehaviour
     public enum enemytype
     {
         archer,
-        knight
+        knight,
+        player
     }
 
     public enemytype etype;
-    private EnemyStats stats;
+    private EnemyStats enemyStats;
+    private PlayerStats playerStats;
     public float modifier;
     // Start is called before the first frame update
     void Awake()
     {
-        stats = GetComponent<EnemyStats>();
-
         if (etype == enemytype.archer)
         {
-            stats.estats.maxhp = (int) (15 * modifier);
-            stats.estats.currenthp = (int) (15 * modifier);
-            stats.estats.damage = (int) (3 * modifier);
+            enemyStats = GetComponent<EnemyStats>();
+
+
+            enemyStats.estats.maxhp = (int) (15 * modifier);
+            enemyStats.estats.currenthp = (int) (15 * modifier);
+            enemyStats.estats.damage = (int) (3 * modifier);
         }
         else if (etype == enemytype.knight)
         {
-            stats.estats.maxhp = (int) (30 * modifier);
-            stats.estats.currenthp = (int) (30 * modifier);
-            stats.estats.damage = (int) (6 * modifier);
+            enemyStats = GetComponent<EnemyStats>();
+
+
+            enemyStats.estats.maxhp = (int) (30 * modifier);
+            enemyStats.estats.currenthp = (int) (30 * modifier);
+            enemyStats.estats.damage = (int) (6 * modifier);
+        }
+
+        else if (etype == enemytype.player)
+        {
+            playerStats = GetComponent<PlayerStats>();
+
+
+            playerStats.pstats.maxhp = 50;
+            playerStats.pstats.currenthp = 50;
+            playerStats.pstats.speed = 8f;
+
+            playerStats.gstats.bulletdamage = 1;
+            playerStats.gstats.firerate = 2;
+            playerStats.gstats.bulletspeed = 10;
         }
     }
 }

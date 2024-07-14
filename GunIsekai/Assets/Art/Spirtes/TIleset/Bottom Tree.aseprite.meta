@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 771bfbd92cb1081438de767975aed8c3
+guid: b67e6282dd2908440ab34856697e2a43
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -95,7 +95,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638565059650626549
+  platformSettingsDirtyTick: 638565059791456835
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -119,7 +119,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: bathroom tiles_Frame_0
+  - name: Bottom Tree
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -128,9 +128,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 32
-      height: 32
-    spriteID: df6cd94706f0ed742851779c2870f0dc
+      width: 31
+      height: 30
+    spriteID: 0039a7b3010089342824fac58887b6db
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -139,135 +139,23 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: bathroom tiles_Frame_1
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 44
-      width: 32
-      height: 32
-    spriteID: 7c609598151f9f940bb7d6925a47ba7b
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 44}
-  - name: bathroom tiles_Frame_2
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 84
-      width: 32
-      height: 32
-    spriteID: d8b30a496d5d73b45ae8165320cdd787
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 84}
-  - name: bathroom tiles_Frame_3
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 44
-      y: 4
-      width: 32
-      height: 32
-    spriteID: 4c8066862982d9a4aa68e2d063a2441a
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 44, y: 4}
-  - name: bathroom tiles_Frame_4
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 44
-      y: 44
-      width: 32
-      height: 32
-    spriteID: 977bcfbb3028f4844b9a3d723d4111a2
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 44, y: 44}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -559159073
-    name: bathroom tiles
+    guid: -770310543
+    name: Bottom Tree
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: bathroom tiles_Frame_0
+    - name: Bottom Tree
       frameIndex: 0
       cellRect:
         x: 0
-        y: 0
-        width: 32
-        height: 32
-      spriteId: df6cd94706f0ed742851779c2870f0dc
-    - name: bathroom tiles_Frame_1
-      frameIndex: 1
-      cellRect:
-        x: 0
-        y: 0
-        width: 32
-        height: 32
-      spriteId: 7c609598151f9f940bb7d6925a47ba7b
-    - name: bathroom tiles_Frame_2
-      frameIndex: 2
-      cellRect:
-        x: 0
-        y: 0
-        width: 32
-        height: 32
-      spriteId: d8b30a496d5d73b45ae8165320cdd787
-    - name: bathroom tiles_Frame_3
-      frameIndex: 3
-      cellRect:
-        x: 0
-        y: 0
-        width: 32
-        height: 32
-      spriteId: 4c8066862982d9a4aa68e2d063a2441a
-    - name: bathroom tiles_Frame_4
-      frameIndex: 4
-      cellRect:
-        x: 0
-        y: 0
-        width: 32
-        height: 32
-      spriteId: 977bcfbb3028f4844b9a3d723d4111a2
+        y: 2
+        width: 31
+        height: 30
+      spriteId: 0039a7b3010089342824fac58887b6db
     linkedCells: []
     parentIndex: -1
   platformSettings:

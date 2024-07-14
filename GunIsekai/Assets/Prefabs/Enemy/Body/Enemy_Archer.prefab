@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 6172198531891278050}
   - component: {fileID: 2996594246136769415}
   - component: {fileID: 7348349763644948468}
+  - component: {fileID: 7124033601591131569}
   m_Layer: 7
   m_Name: Enemy_Archer
   m_TagString: Enemy
@@ -225,7 +226,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1fd37e6fb4ecab4f86756be108cda2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxhealth: 0
+--- !u!114 &7124033601591131569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 659642441391058852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09748ff201aba644294d0857d39e2139, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  etype: 0
+  modifier: 1
 --- !u!1 &7100464069285960182
 GameObject:
   m_ObjectHideFlags: 0
@@ -422,7 +436,7 @@ SpriteRenderer:
   m_SortingLayerID: -1586842959
   m_SortingLayer: 1
   m_SortingOrder: 1
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 8069829141408841290, guid: 5cb8837f3345ecd49acd57d062f553c2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -468,7 +482,7 @@ Animator:
   m_GameObject: {fileID: 7115582957525956432}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 928825788037575063, guid: 5cb8837f3345ecd49acd57d062f553c2, type: 3}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

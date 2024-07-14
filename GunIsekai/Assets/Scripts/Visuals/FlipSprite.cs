@@ -15,13 +15,13 @@ public class FlipSprite : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.GetComponent<AIPath>() != null)
+        if (transform.parent.GetComponent<AIPath>() != null)
         {
-            pathing = transform.GetComponent<AIPath>().velocity;
+            pathing = transform.parent.GetComponent<AIPath>().velocity;
         }
-        else if (transform.GetComponent<Rigidbody2D>() != null)
+        else if (transform.parent.GetComponent<Rigidbody2D>() != null)
         {
-            pathing = transform.GetComponent<Rigidbody2D>().velocity;
+            pathing = transform.parent.GetComponent<Rigidbody2D>().velocity;
         }
 
 

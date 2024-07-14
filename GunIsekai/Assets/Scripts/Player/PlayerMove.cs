@@ -6,12 +6,13 @@ public class PlayerMove : MonoBehaviour
 {
     bool canMove;
     Rigidbody2D rb;
-    public float speed;
+    public PlayerStats stats;
     // Start is called before the first frame update
     void Awake()
     {
         canMove = true;
         rb = GetComponent<Rigidbody2D>();
+        stats = GetComponent<PlayerStats>();
     }
 
     private Vector2 PlayerDirection = Vector2.zero;
@@ -49,7 +50,7 @@ public class PlayerMove : MonoBehaviour
             // Convert the vector to normalized form and change player's velocity
             PlayerDirection.Normalize();
 
-            rb.velocity = PlayerDirection * speed;
+            rb.velocity = PlayerDirection * stats.pstats.speed;
 
             // Reset PlayerDirection for next iteration of FixedUpdate
             PlayerDirection = Vector2.zero;
@@ -59,8 +60,4 @@ public class PlayerMove : MonoBehaviour
     public void setCanMove(bool can) { canMove = can; }
 
     public bool getCanMove() { return canMove; }
-
-    public void setSpeed(float speed) { this.speed = speed;}
-
-    public float getSpeed() { return this.speed; } 
 }

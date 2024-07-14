@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 8264469212844011433}
   - component: {fileID: 4865737630958664025}
   - component: {fileID: 3294570360911839730}
+  - component: {fileID: 3907007068876216680}
   m_Layer: 7
   m_Name: Enemy_Knight
   m_TagString: Enemy
@@ -225,7 +226,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1fd37e6fb4ecab4f86756be108cda2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxhealth: 30
+--- !u!114 &3907007068876216680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1074034065399778319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09748ff201aba644294d0857d39e2139, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  etype: 1
+  modifier: 1
 --- !u!1 &3142414776067956583
 GameObject:
   m_ObjectHideFlags: 0
@@ -360,9 +374,9 @@ GameObject:
   - component: {fileID: 6335651232636941107}
   - component: {fileID: 1287621082091105910}
   - component: {fileID: 5252578490953432055}
-  m_Layer: 7
+  m_Layer: 10
   m_Name: Sword
-  m_TagString: Untagged
+  m_TagString: Sword
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -504,6 +518,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fdc5263161ea2a4b8bf6b7f0ed52543, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 0
 --- !u!95 &5252578490953432055
 Animator:
   serializedVersion: 7

@@ -5,12 +5,10 @@ using UnityEngine;
 public class EnemyHealthHandler : MonoBehaviour
 {
     private EnemyStats estats;
-    public int maxhealth;
     // Start is called before the first frame update
     void Awake()
     {
         estats = GetComponent<EnemyStats>();
-        estats.setMaxHP(maxhealth);
     }
 
     // Update is called once per frame

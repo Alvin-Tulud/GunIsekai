@@ -24,6 +24,7 @@ public class BulletHit : MonoBehaviour
 
     IEnumerator killObj()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(2);
+        Destroy(this.gameObject);
     }
 }

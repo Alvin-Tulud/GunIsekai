@@ -23,19 +23,12 @@ public class PlayerStats : MonoBehaviour
 
     private void Awake()
     {
-        pstats.maxhp = 50;
-        pstats.currenthp = pstats.maxhp;
-        pstats.speed = 0f;
-        addSpeed(8f);
 
-        gstats.bulletdamage = 1;
     }
 
     public void addSpeed(float speed)
     {
-        PlayerMove pMove = GetComponent<PlayerMove>();
         pstats.speed += speed;
-        pMove.setSpeed(pstats.speed);
     }
 
     public void addMaxHP(int maxhp)

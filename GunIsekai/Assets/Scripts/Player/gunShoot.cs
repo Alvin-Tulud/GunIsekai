@@ -5,11 +5,13 @@ using UnityEngine;
 public class gunShoot : MonoBehaviour
 {
     public GameObject bullet;
-    public const float bulletSpeed = 15f;
+    float bulletSpeed;
     private bool canShoot;
+    private PlayerStats playerStats;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
+        playerStats = transform.parent.GetComponent<PlayerStats>();
         canShoot = true;
     }
 
@@ -25,7 +27,7 @@ public class gunShoot : MonoBehaviour
     IEnumerator canShootWait()
     {
         canShoot = false;
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(1f / playerStats.gstats.firerate);
         canShoot = true;
     }
 
@@ -46,7 +48,7 @@ public class gunShoot : MonoBehaviour
 
             mousePos.Normalize();
 
-            proj.GetComponent<Rigidbody2D>().velocity = mousePos * bulletSpeed;
+            proj.GetComponent<Rigidbody2D>().velocity = mousePos * playerStats.gstats.bulletspeed;
 
             proj.GetComponent<BulletHit>().damage = transform.parent.GetComponent<PlayerStats>().gstats.bulletdamage;
 
