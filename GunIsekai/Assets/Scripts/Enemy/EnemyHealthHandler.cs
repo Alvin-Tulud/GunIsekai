@@ -5,10 +5,12 @@ using UnityEngine;
 public class EnemyHealthHandler : MonoBehaviour
 {
     private EnemyStats estats;
+    private ScoreKeeping score;
     // Start is called before the first frame update
     void Awake()
     {
         estats = GetComponent<EnemyStats>();
+        score = GameObject.FindWithTag("ScoreKeep").GetComponent<ScoreKeeping>();
     }
 
     // Update is called once per frame
@@ -16,6 +18,8 @@ public class EnemyHealthHandler : MonoBehaviour
     {
         if (estats.estats.currenthp <= 0)
         {
+            score.addKill();
+
             Destroy(gameObject);
         }
     }
