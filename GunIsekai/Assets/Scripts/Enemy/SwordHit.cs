@@ -14,12 +14,14 @@ public class SwordHit : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        StartCoroutine(canHit());
     }
 
     IEnumerator canHit()
     {
+        int temp = damage;
         damage = 0;
         yield return new WaitForSeconds(0.5f);
+        damage = temp;
     }
 }
