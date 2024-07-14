@@ -26,7 +26,7 @@ public class PlayerHealthHandler : MonoBehaviour
         healthSlider.value = pstats.pstats.currenthp;
         if (pstats.pstats.currenthp <= 0)
         {
-            //Destroy(gameObject); end game
+            GetComponent<SceneChanger>().gotoMenu();
         }
     }
 

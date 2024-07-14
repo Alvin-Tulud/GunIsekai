@@ -6,8 +6,8 @@ public class PlayerStats : MonoBehaviour
 {
     public struct playerstats
     {
-        public int currenthp;
-        public int maxhp;
+        public float currenthp;
+        public float maxhp;
         public float speed;
     }
 
@@ -15,7 +15,7 @@ public class PlayerStats : MonoBehaviour
     {
         public float bulletspeed;
         public float firerate;
-        public int bulletdamage;
+        public float bulletdamage;
     }
 
     public playerstats pstats;

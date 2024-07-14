@@ -14,6 +14,7 @@ TagManager:
   - SpawnPoint
   - Spawner
   - Experience
+  - Screen
   layers:
   - Default
   - TransparentFX

@@ -46,7 +46,7 @@ public class BaseStats : MonoBehaviour
             playerStats.pstats.currenthp = 50;
             playerStats.pstats.speed = 4f;
 
-            playerStats.gstats.bulletdamage = 1;
+            playerStats.gstats.bulletdamage = 2;
             playerStats.gstats.firerate = 2;
             playerStats.gstats.bulletspeed = 10;
         }

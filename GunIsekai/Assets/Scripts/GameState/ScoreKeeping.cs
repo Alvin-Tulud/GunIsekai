@@ -37,7 +37,7 @@ public class ScoreKeeping : MonoBehaviour
 
     public void checkprogress()
     {
-        if (neededkills >= killcount)
+        if (killcount >= neededkills)
         {
             killcount = 0;
 
@@ -62,5 +62,7 @@ public class ScoreKeeping : MonoBehaviour
     {
         //popup the menu
         //GameObject.FindWithTag("Spawner").SetActive(false);
+
+        GameObject.FindWithTag("Screen").GetComponent<PopupLevel>().togglelevelup(true);
     }
 }

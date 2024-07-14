@@ -7,9 +7,11 @@ public class SpawnEnemy : MonoBehaviour
     List<Transform> spawnpoints = new List<Transform>();
     public List<GameObject> enemies = new List<GameObject>();
 
-    private bool canSpawn;
+    private bool spawndelay;
     private float waittime;
     public float modifier;
+    public bool canSpawn;
+    public Vector2 camPos;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,29 +19,35 @@ public class SpawnEnemy : MonoBehaviour
         {
             spawnpoints.Add(transform.GetChild(i));
         }
-        canSpawn = true;
-        waittime = 2f;
+        spawndelay = true;
+        waittime = 0.75f;
         modifier = 1f;
+        canSpawn = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        spawn();
     }
 
     public void spawn()
     {
-        if (canSpawn)
+        if (spawndelay && canSpawn)
         {
-            foreach(Transform t in spawnpoints)
+            for (int i = 0; i < spawnpoints.Count; i++)
             {
-                Vector2 camPos = Camera.main.ScreenToWorldPoint(t.position);
-                if (Mathf.Abs(camPos.x) > 9 && Mathf.Abs(camPos.x) < 18 || Mathf.Abs(camPos.y) > 5 && Mathf.Abs(camPos.y) < 10)
+                Transform t = spawnpoints[i];
+
+                camPos = Camera.main.ScreenToWorldPoint(t.position);
+
+                if (Mathf.Abs(camPos.x) > 12 && Mathf.Abs(camPos.x) < 17 || Mathf.Abs(camPos.y) > 6 && Mathf.Abs(camPos.y) < 10)
                 {
                     int randEnemy = Random.Range(0, 2);
                     GameObject g = Instantiate(enemies[randEnemy], t.position, t.rotation);
                     g.GetComponent<BaseStats>().modifier = modifier;
+
+                    //Debug.Log(t.name);
                     break;
                 }
             }
@@ -49,8 +57,8 @@ public class SpawnEnemy : MonoBehaviour
 
     IEnumerator canHit()
     {
-        canSpawn = false;
+        spawndelay = false;
         yield return new WaitForSeconds(1f/waittime);
-        canSpawn = true;
+        spawndelay = true;
     }
 }
