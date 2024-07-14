@@ -18,6 +18,7 @@ public class ScoreKeeping : MonoBehaviour
         neededkills = 5f;
         currentlevel = 0;
 
+        expslider = GameObject.FindWithTag("Experience").GetComponent<Slider>();
     }
 
     // Update is called once per frame
@@ -45,6 +46,8 @@ public class ScoreKeeping : MonoBehaviour
             if (currentlevel % 5 == 0)
             {
                 neededkills *= 1.5f;
+
+                GameObject.FindWithTag("Spawner").GetComponent<SpawnEnemy>().modifier *= 1.5f;
             }
             else
             {
@@ -58,6 +61,6 @@ public class ScoreKeeping : MonoBehaviour
     public void levelup()
     {
         //popup the menu
-        GameObject.FindWithTag("Spawner").SetActive(false);
+        //GameObject.FindWithTag("Spawner").SetActive(false);
     }
 }

@@ -43,6 +43,7 @@ public class SwordHit : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            Debug.Log("player hit");
             collision.gameObject.GetComponent<PlayerStats>().takeDamage(damage);
         }
     }

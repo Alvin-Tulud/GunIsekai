@@ -9,6 +9,7 @@ public class SpawnEnemy : MonoBehaviour
 
     private bool canSpawn;
     private float waittime;
+    public float modifier;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +19,7 @@ public class SpawnEnemy : MonoBehaviour
         }
         canSpawn = true;
         waittime = 2f;
+        modifier = 1f;
     }
 
     // Update is called once per frame
@@ -36,7 +38,8 @@ public class SpawnEnemy : MonoBehaviour
                 if (Mathf.Abs(camPos.x) > 9 && Mathf.Abs(camPos.x) < 18 || Mathf.Abs(camPos.y) > 5 && Mathf.Abs(camPos.y) < 10)
                 {
                     int randEnemy = Random.Range(0, 2);
-                    Instantiate(enemies[randEnemy], t.position, t.rotation);
+                    GameObject g = Instantiate(enemies[randEnemy], t.position, t.rotation);
+                    g.GetComponent<BaseStats>().modifier = modifier;
                     break;
                 }
             }

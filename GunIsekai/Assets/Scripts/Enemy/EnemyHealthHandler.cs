@@ -19,6 +19,7 @@ public class EnemyHealthHandler : MonoBehaviour
         if (estats.estats.currenthp <= 0)
         {
             score.addKill();
+            Debug.Log("add kill");
 
             Destroy(gameObject);
         }
