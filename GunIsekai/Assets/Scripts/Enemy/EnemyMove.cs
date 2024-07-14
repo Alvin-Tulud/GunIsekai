@@ -8,7 +8,7 @@ public class EnemyMove : MonoBehaviour
     private Transform playerTransform;
     private AIDestinationSetter destinationSetter;
     private AIPath AIPath;
-    private const float ENEMY_SPEED = 4f;
+    private const float ENEMY_SPEED = 2f;
     // Start is called before the first frame update
     void Awake()
     {

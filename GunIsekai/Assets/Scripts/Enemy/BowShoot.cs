@@ -5,7 +5,7 @@ using UnityEngine;
 public class BowShoot : MonoBehaviour
 {
     public GameObject arrow;
-    public const float arrowSpeed = 7f;
+    public const float arrowSpeed = 6f;
     private bool canShoot;
     // Start is called before the first frame update
     void Start()

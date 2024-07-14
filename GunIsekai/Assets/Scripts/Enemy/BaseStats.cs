@@ -23,8 +23,8 @@ public class BaseStats : MonoBehaviour
             enemyStats = GetComponent<EnemyStats>();
 
 
-            enemyStats.estats.maxhp = (int) (15 * modifier);
-            enemyStats.estats.currenthp = (int) (15 * modifier);
+            enemyStats.estats.maxhp = (int) (10 * modifier);
+            enemyStats.estats.currenthp = (int) (10 * modifier);
             enemyStats.estats.damage = (int) (3 * modifier);
         }
         else if (etype == enemytype.knight)
@@ -32,8 +32,8 @@ public class BaseStats : MonoBehaviour
             enemyStats = GetComponent<EnemyStats>();
 
 
-            enemyStats.estats.maxhp = (int) (30 * modifier);
-            enemyStats.estats.currenthp = (int) (30 * modifier);
+            enemyStats.estats.maxhp = (int) (20 * modifier);
+            enemyStats.estats.currenthp = (int) (20 * modifier);
             enemyStats.estats.damage = (int) (6 * modifier);
         }
 
@@ -44,7 +44,7 @@ public class BaseStats : MonoBehaviour
 
             playerStats.pstats.maxhp = 50;
             playerStats.pstats.currenthp = 50;
-            playerStats.pstats.speed = 8f;
+            playerStats.pstats.speed = 4f;
 
             playerStats.gstats.bulletdamage = 1;
             playerStats.gstats.firerate = 2;
